@@ -52,8 +52,8 @@ class Game{
                      x = 500-allPlayers[plr].distance;
                      y=500;
                      
-                     players[index - 1].x = x;
-                     players[index - 1].y = y;
+                     players[index -1].x = x;
+                     players[index -1].y = y;
                        
                      if(index === player.index){
                          
@@ -73,11 +73,11 @@ class Game{
                 
                  
 
-                if (keyIsDown(RIGHT_ARROW) && player.index !== null) {
+                if (keyIsDown(RIGHT_ARROW) ) {
                     player.distance -= 10
                     player.update();
                 }
-                if (keyIsDown(LEFT_ARROW) && player.index !== null) {
+                if (keyIsDown(LEFT_ARROW) ) {
                     player.distance += 10
                     player.update();
                 }
@@ -120,7 +120,7 @@ class Game{
                   score=score+1
                 }
                      player.score = player.score+1;
-                     score.update();
+                     player.update();
                   }
                 
                 }

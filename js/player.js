@@ -36,7 +36,14 @@ class Player {
         playerInfoRef.on("value", (data) => {
             allPlayers = data.val();
         })
-    }
 
+    }
+    static deleteplayer (){
+   database.ref("players").remove()
+
+
+
+
+    }
     
 }
